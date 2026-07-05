@@ -1,0 +1,24 @@
+{
+  "name": "calliope",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CALLIOPE: a full design agency in your terminal. Interviews like a strategist, proposes like a creative director, builds like a production team, audits like a QA lead.",
+  "scripts": {
+    "test": "node benchmarks/run.js"
+  },
+  "license": "MIT",
+  "author": "Eragon (eragonlonelyboy-lab)",
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "claude-code",
+    "design-agency",
+    "ai-agents",
+    "skill",
+    "brand-identity",
+    "web-design",
+    "design-system",
+    "demiurge"
+  ]
+}

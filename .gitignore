@@ -1,0 +1,6 @@
+node_modules/
+.calliope/
+clients/
+*.log
+desktop.ini
+.DS_Store
