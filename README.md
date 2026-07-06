@@ -6,6 +6,8 @@
 
 *A full AI design agency in Claude Code. It interviews, briefs, produces, and refuses to show you a 7.9.*
 
+**The agentic design agency. It directs Claude Design, Figma, and v0 like a studio.**
+
 ![license](https://img.shields.io/badge/license-MIT-E8A23D)
 ![skill](https://img.shields.io/badge/skill-2C7A7B)
 ![lint](https://img.shields.io/badge/lint-88%2F88-E8A23D)
