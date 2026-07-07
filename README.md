@@ -60,7 +60,7 @@ The generators are good. That is exactly why the missing product is the agency t
 2. **Contract.** A one-page brief you sign, plus 3 to 5 design principles derived from your answers. Every later verdict cites them by name.
 3. **Treatments.** 2 to 3 narrative concepts, each with a stylescape at three temperatures. Always one recommendation, argued in your principles' terms.
 4. **Production.** Role agents (Strategist, Creative Director, Art Director, Copywriter, Builders, QA) per medium: 9 medium packs from brand identity to video.
-5. **The gate.** Build, render for real, measure, fix, repeat to zero findings, score. Below 8.0, it does not ship. A 7.9 fails.
+5. **The gate.** Build, render for real, measure, fix, repeat to zero findings, score. The verdict reads the rendered artifact, not the builder's story of it: "I intended it" is not "it is on the screen." Below 8.0, it does not ship. A 7.9 fails.
 6. **Close.** Itemized pass/fail UAT, handoff bundle, auto-generated case study, and a check-in date against your success metrics.
 
 Three modes: **Director** (CALLIOPE builds), **Coach** (you build, it teaches and gates), **Directed-external** (a third-party tool builds, CALLIOPE directs it through prompt and screenshot rounds).
