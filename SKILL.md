@@ -148,7 +148,7 @@ Every dispatch uses `references/roles/_handoff_contract.md`. Subagents return fi
 
 ## Directed-external adapters
 
-`references/adapters/`: claude_design, figma, canva, stitch, v0_lovable, imagegen_ui, powerpoint + `_integration_tiers.md` (drive-directly → watch+guide → blind-coach). Always use the highest tier available for the tool. The prompt-dialect layer per tool lives inside its adapter.
+`references/adapters/`: claude_design, figma, canva, stitch, v0_lovable, imagegen_ui, powerpoint, aura, kinema + `_integration_tiers.md` (drive-directly → watch+guide → blind-coach). Always use the highest tier available for the tool. The prompt-dialect layer per tool lives inside its adapter. Two of these are CALLIOPE's own engines, not third-party wraps: **aura** (`engines/aura/`) is the Tier-1 design-system extraction engine for the Phase 0.5 live-URL station (reads a site's system off the rendered DOM, curated with judgment), and **kinema** is the video-render capability (the brief-to-composition direction layer over the HyperFrames engine).
 
 ## Ecosystem (Demiurge)
 

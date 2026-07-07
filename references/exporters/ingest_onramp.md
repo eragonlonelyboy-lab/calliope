@@ -13,7 +13,9 @@ Dispatch a Strategist extraction (fresh subagent). Stations:
 2. **Voice snapshot:** headline register, CTA language, terminology the brand already owns.
 3. **Asset inventory:** logo variants found, imagery style, icon style.
 4. **Judgment layer:** what reads as designed vs accreted; the 3 things worth keeping; the 3 things fighting the brand.
-Output: `.calliope/ingest/site_extraction.md`. Instrumented where possible (DOM computed values, not eyeballing).
+
+Instrument station 1 with AURA (`references/adapters/aura.md`), CALLIOPE's own extraction engine: run `node engines/aura/bin/aura.mjs <url> --out .calliope/ingest/aura/` for a curated design system (canonical tokens with semantic roles, a detected type scale and spacing verdict, and a drift report) instead of eyeballing. AURA proposes the system-vs-noise call; the Strategist ratifies it against the brief (the accent role especially). Stations 2 to 4 (voice, assets, judgment) stay Strategist-read.
+Output: `.calliope/ingest/site_extraction.md` (DOM computed values, not eyeballing).
 
 ## Source: repo
 

@@ -80,7 +80,7 @@ packs.forEach(p => {
 console.log('\n[adapters]');
 const ADAPTER_HEADINGS = ['Tier & detection', 'Capabilities & limits', 'Walkthrough script',
   'Prompt dialect', 'Export & handoff path', 'Known failure modes'];
-const adapters = ['claude_design', 'figma', 'canva', 'stitch', 'v0_lovable', 'imagegen_ui', 'powerpoint'];
+const adapters = ['claude_design', 'figma', 'canva', 'stitch', 'v0_lovable', 'imagegen_ui', 'powerpoint', 'aura', 'kinema'];
 ok('adapter doctrine: _integration_tiers', exists('references/adapters/_integration_tiers.md'));
 adapters.forEach(a => {
   const s = read('references/adapters/' + a + '.md');

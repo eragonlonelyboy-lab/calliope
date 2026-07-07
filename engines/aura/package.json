@@ -1,0 +1,34 @@
+{
+  "name": "@calliope/aura",
+  "version": "0.1.0",
+  "description": "AURA reads a live site's design system off the rendered DOM and returns a curated, opinionated token set plus a drift report with rationale. Extraction is the commodity; the editorial judgment is the point.",
+  "type": "module",
+  "bin": {
+    "aura": "bin/aura.mjs"
+  },
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "scripts": {
+    "test": "node test/run.mjs",
+    "postinstall": "node -e \"console.log('AURA needs a browser: run npx playwright install chromium')\""
+  },
+  "keywords": [
+    "design-system",
+    "design-tokens",
+    "dtcg",
+    "css-extraction",
+    "tailwind",
+    "figma",
+    "brand"
+  ],
+  "author": "Eragon Lee",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "culori": "^4.0.1",
+    "playwright": "^1.49.0"
+  }
+}
