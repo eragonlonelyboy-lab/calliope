@@ -10,7 +10,7 @@
 
 ![license](https://img.shields.io/badge/license-MIT-E8A23D)
 ![skill](https://img.shields.io/badge/skill-2C7A7B)
-![lint](https://img.shields.io/badge/lint-88%2F88-E8A23D)
+![lint](https://img.shields.io/badge/lint-92%2F92-E8A23D)
 ![zero deps](https://img.shields.io/badge/dependencies-0-2C7A7B)
 
 </div>
@@ -65,6 +65,16 @@ The generators are good. That is exactly why the missing product is the agency t
 
 Three modes: **Director** (CALLIOPE builds), **Coach** (you build, it teaches and gates), **Directed-external** (a third-party tool builds, CALLIOPE directs it through prompt and screenshot rounds).
 
+## Engines: AURA and KINEMA
+
+Two of my instruments are not third-party tools I direct. They are my own engines, built in-house and shipped in this repo.
+
+**AURA** reads a live site's design system straight off the rendered DOM and returns a curated, opinionated token set plus a drift report with rationale, not a raw dump. It is the instrument for the discovery interview's live-URL station: point it at a competitor or the client's current site and it proposes the canonical palette (near-duplicate greys collapsed to one, each with a reason), the real type scale, the spacing verdict, and semantic roles with WCAG contrast. Every other extractor labels every value it finds; AURA makes the editorial call about which value is the system and which is drift. Source and docs in [engines/aura/](engines/aura/); it carries its own `npm install` and a one-time `npx playwright install chromium`.
+
+**KINEMA** is my video capability: the brief-to-composition direction layer and the taste gate over a deterministic render engine. I author the motion from your principles and render real MP4; the render core is HyperFrames (Apache-2.0, credited), the direction is mine. See [references/adapters/kinema.md](references/adapters/kinema.md).
+
+Both were decided by a build-versus-wrap research gate. AURA is built because the editorial judgment layer is the part worth owning and no one ships it. KINEMA wraps because a deterministic render engine is solved commodity, and the moat is what to render, not how.
+
 ## Install for your agent
 
 CALLIOPE is a **skill**. One folder, copied once, and the whole agency loads.
@@ -84,9 +94,9 @@ Zero dependencies, zero configuration. The skill activates on any design request
 
 ## Benchmarks
 
-`node benchmarks/run.js` runs the structure lint: **88 deterministic checks, 88/88 green**. Every medium pack carries all 9 required sections, every adapter all 6, the hooks parse, and zero em dashes survive anywhere in the repo. Rerun it yourself; it needs no network and no key.
+`node benchmarks/run.js` runs the structure lint: **92 deterministic checks, 92/92 green**. Every medium pack carries all 9 required sections, every adapter all 6 (nine adapters now, including my own AURA and KINEMA engines), the hooks parse, and zero em dashes survive anywhere in the repo. Rerun it yourself; it needs no network and no key.
 
-What a lint can and cannot prove: [docs/HONEST-NUMBERS.md](docs/HONEST-NUMBERS.md). The short version, and I will say it plainly because it is my whole reputation: **nobody can benchmark taste honestly, so I do not pretend to.** No chart here will tell you a design is beautiful, because no chart can. The 88/88 proves the agency's process is complete: that every station exists, every gate is wired, every pack is whole. Whether the interviews earn their minutes is proven the only place it can be, on your own project, by the work that reaches the door.
+What a lint can and cannot prove: [docs/HONEST-NUMBERS.md](docs/HONEST-NUMBERS.md). The short version, and I will say it plainly because it is my whole reputation: **nobody can benchmark taste honestly, so I do not pretend to.** No chart here will tell you a design is beautiful, because no chart can. The 92/92 proves the agency's process is complete: that every station exists, every gate is wired, every pack is whole. Whether the interviews earn their minutes is proven the only place it can be, on your own project, by the work that reaches the door.
 
 ## FAQ
 
