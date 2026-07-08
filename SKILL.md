@@ -136,6 +136,7 @@ Every dispatch uses `references/roles/_handoff_contract.md`. Subagents return fi
 
 - **Core bar** (medium-agnostic, 8 dimensions): point of view not template · typography that does work · restrained color system · hierarchy that breathes · imagery with intent · motion that whispers · designed for its surface · the invisible expensive stuff. `core_bar.md`.
 - **Medium packs** interpret the bar per medium, each with a benchmark, technique atlas, and treatment flavor: `references/packs/` (brand, website, app, slides, pdf, campaign, packaging, video, illustration_3d).
+- **Visual prompt library** (`references/packs/visual-prompt-library.md`): reusable fill-in-the-blank generation templates across 8 purpose sections (brand marks, app icons, product/e-commerce shots, illustration/hero, portraits, cinematic/backgrounds, social/thumbnails, mascots) plus a naming module and a UX/onboarding-copy lens. Draw from it during production; it composes with the quality gate and never overrides the Demiurge Visual Standard.
 - **Scoresheets** (`scoresheet.md`): numeric, threshold-gated, principles cited by name. Scores are logged to `.calliope/scores.log` (they feed the Taste-Eval Benchmark).
 - **Technique atlas** (`technique_atlas.md`): GSAP, Three.js/WebGL, parallax, scroll choreography, see-thru scrub, mouse tracking, 3D scroll; Chrome DevTools perf ritual is the final gate on anything animated.
 
