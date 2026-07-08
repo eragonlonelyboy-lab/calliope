@@ -125,7 +125,9 @@ function mdFiles(dir) {
 const dashHits = [];
 for (const f of mdFiles(ROOT)) {
   const s = fs.readFileSync(f, 'utf8');
-  if (/[—–]/.test(s)) dashHits.push(path.relative(ROOT, f));
+  // Spelled as escapes, never as the literal characters: a dash lint written with
+  // real dashes flags its own source, and a bulk dash sweep silently guts it (CHI-R001).
+  if (/[\u2014\u2013]/.test(s)) dashHits.push(path.relative(ROOT, f));
 }
 ok('zero em/en dashes in all .md', dashHits.length === 0, dashHits.join(', '));
 
