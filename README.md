@@ -128,6 +128,9 @@ CALLIOPE is a [Demiurge](https://github.com/eragonlonelyboy-lab/demiurge) produc
 | **CHIRON** | corrections become permanent cross-agent rules |
 | **ATHENA** | decision trials with verdicts on the record |
 | **MAAT** | multi-agent attention terminal: status with evidence |
+| **ZOILUS** | the merciless critic: judges the craft blind, and rejects on doubt |
+| **PEITHO** | go-to-market words that refuse to sound generic; CALLIOPE frames them |
+| **PYRRHO** | the skeptic: no numeric claim ships until the data earns it |
 
 **Pair it with VERITAS.** Every word CALLIOPE puts in front of your client (briefs, treatments, case studies) runs VERITAS-clean when the full engine is installed; without it you get the embedded 20-rule lite core. The full engine is better. It is one file.
 
