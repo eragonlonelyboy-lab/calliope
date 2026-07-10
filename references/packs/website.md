@@ -1,6 +1,6 @@
 # Pack: website
 
-The reference pack: it existed before CALLIOPE (the house website playbook + $10K bar + the Blacksmith benchmark) and sets the depth standard for the other eight. When the full house playbook is installed (`~/.claude/skills/website-playbook.md`), it is this pack's extended corpus; this pack stands alone when it is not.
+The reference pack: it existed before CALLIOPE (the house website playbook + $10K bar + the Blacksmith benchmark) and sets the depth standard for the other eight. When the full house playbook is installed (`~/.claude/skills/website-playbook.md`), it is this pack's extended corpus; this pack stands alone when it is not. This pack judges craft; the strategy layer above it (one job, first scroll, copy before design, the five-question audit) lives in `website-seven-laws.md` and loads earlier, at Phase 1 to 2.
 
 ## Bar interpretation
 

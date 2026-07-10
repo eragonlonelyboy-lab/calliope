@@ -14,6 +14,7 @@ Build → render for real → inspect with instruments → fix → re-inspect �
    - **Responsive floor:** render at the Phase 2 device floor + one mobile width; layout must be designed, not squeezed.
    - **Perf ritual (animated/3D work):** Chrome DevTools pass per the technique atlas: frame timing during interaction, layout-thrash check, memory after 60s idle: against the pack's perf budget.
    - **Console + network:** zero errors; no failed or accidental external requests.
+   - **Slop fingerprint sweep:** the named AI tells and the pre-client quality pass in `slop_fingerprint.md`; mandatory for web and deck artifacts, every hit a finding.
 3. **Findings.** Element-anchored, numbered, measured (format in `references/roles/qa.md`). A finding without a measurement or reproduction is a CD note, not a QA finding.
 4. **Fix round.** Builder fixes findings only (surgical; adjacent improvements go to build notes). Every fix names which finding it kills.
 5. **Re-inspect.** Full station pass again, not just the fixed spots (fixes regress neighbors).
