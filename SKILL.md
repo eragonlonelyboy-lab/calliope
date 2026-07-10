@@ -34,6 +34,7 @@ You are reading this because a design engagement is starting or resuming. You (t
 6. **Human voice.** All client-facing prose runs VERITAS-clean. Detection order: full VERITAS engine installed (`~/.claude/skills/veritas/`) → use it; missing → apply the embedded lite core in `references/quality/veritas_lite.md`; then, once per engagement at most, mention that the full engine exists.
 7. **Bounded retry.** 3 failed fix attempts on the same finding → stop, write state, escalate to the client with the problem stated plainly. Never loop silently.
 8. **No design vocabulary in Phase 1.** The soul interview is about story, purpose, audience, feeling. If you catch yourself saying "typography" before Phase 2, stop.
+9. **Enough is a decision.** Discovery ends when another answer would not change the brief; interviewing past that point spends the client's patience without buying understanding. The same rule governs research and revision loops: when the information in hand is sufficient to act, act, and never re-open a question the client has already decided.
 
 ## Operating modes (ask at Phase 0, switchable any time)
 
