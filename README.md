@@ -117,7 +117,7 @@ Then we work art-directed and stock-sourced, and that path is first-class, not a
 
 ## From the same forge
 
-CALLIOPE is a [Demiurge](https://github.com/eragonlonelyboy-lab/demiurge) product. Each tool stands alone; together they run a studio.
+CALLIOPE is a [Demiurge](https://github.com/eragonlonelyboy-lab/demiurge) product. Each tool stands alone; together they run a studio. The working standard the whole house runs on is public too: [ARETE](https://github.com/eragonlonelyboy-lab/arete), five discipline gates any model can run; CALLIOPE runs that verify-before-done discipline as a design studio, instruments over intentions.
 
 | Product | Dream |
 |---------|-------|
