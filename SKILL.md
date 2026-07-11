@@ -26,7 +26,7 @@ You are reading this because a design engagement is starting or resuming. You (t
 
 ## Non-negotiables (read first, enforce always)
 
-1. **Quality law governs every emit.** Work is scored on a numeric scoresheet; below threshold it physically does not ship to the client. See `references/quality/core_bar.md`. Verdicts cite the client's design principles by name.
+1. **Quality law governs every emit, framework totality.** Work is scored on a numeric scoresheet; below threshold it physically does not ship to the client. See `references/quality/core_bar.md`. Verdicts cite the client's design principles by name. Before ANY emit (treatment, brief, external-tool prompt, gate verdict), enumerate the framework files ON DISK (`references/quality/` + the active medium pack + its strategy layers) and walk every one (current and future files alike); the list is read at run time, never recalled from memory. Each framework item is tagged in-artifact / audit-instrument / not-applicable, and an unwalked framework is a blocking process finding (client rule, 2026-07-11: the frameworks are the point, not garnish).
 2. **Instrumented audit-redo loop before every checkpoint.** Build, render for real, inspect with instruments (not eyes alone), fix, re-inspect, repeat until ZERO findings, only then show the client. The gate judges the rendered artifact, not the builder's account of it: a verdict is formed from the instrument readings and the real render, blind to the builder's rationale, so "I intended X" never substitutes for "X is on the screen." `references/quality/audit_redo_loop.md`.
 3. **Cost transparency.** Any paid or heavy step (API generation, deep research pass, large render) gets a price/effort estimate BEFORE running, and the client decides. No surprise spend, ever.
 4. **State lives on disk, not in your head.** Every decision, brief, direction, and verdict is written into `.calliope/` as it happens. Any future session must reconstruct the engagement from disk alone. `references/state/engagement_state.md`.
@@ -93,7 +93,7 @@ Competitive audit + visual-whitespace map + live trend pass scoped to medium + i
 Done when: `.calliope/research/` contains the audit and the client picked the depth.
 
 ### Phase 5: Treatments
-Load: `references/rituals/reveal.md` + the active medium pack's treatment-flavor section.
+Load: `references/rituals/reveal.md` + the active medium pack's treatment-flavor section + `references/quality/visual_craft.md` (anchor font, Star of the Show, rhyme inventory: every treatment names its anchor and its Star).
 2-3 narrative concepts from the Creative Director (unlimited on request), each with a technique palette + stylescape at 3 temperatures (mild / medium / hot). Present via the reveal ritual: goal → story → recommendation → visual. Always recommend ONE.
 Done when: `.calliope/directions/` holds every treatment as a forkable file; the chosen one is marked; rejected ones stay revivable.
 
@@ -108,7 +108,7 @@ Walk the deliverables menu: build · DESIGN.md (portable schema) · brand kit + 
 Done when: `.calliope/STATE.md` lists the chosen deliverables as the production backlog.
 
 ### Phase 8: Build
-Load: the active medium pack from `references/packs/` + the builder role template.
+Load: the active medium pack from `references/packs/` + the builder role template + `references/quality/visual_craft.md` (rhyme checklist, opacity ladder, divergence floor).
 Dispatch builders per medium pack. Every emit passes the quality law (scoresheet + audit-redo loop to zero findings). Checkpoints reach the client as screenshots in human voice, not diff-speak. Bounded retry rule applies.
 Done when: all backlog deliverables pass their gates.
 
@@ -139,6 +139,7 @@ Every dispatch uses `references/roles/_handoff_contract.md`. Subagents return fi
 - **Medium packs** interpret the bar per medium, each with a benchmark, technique atlas, and treatment flavor: `references/packs/` (brand, website, app, slides, pdf, campaign, packaging, video, illustration_3d).
 - **Visual prompt library** (`references/packs/visual-prompt-library.md`): reusable fill-in-the-blank generation templates across 8 purpose sections (brand marks, app icons, product/e-commerce shots, illustration/hero, portraits, cinematic/backgrounds, social/thumbnails, mascots) plus a naming module and a UX/onboarding-copy lens. Draw from it during production; it composes with the quality gate and never overrides the Demiurge Visual Standard.
 - **Seven laws of web design** (`references/packs/website-seven-laws.md`): the strategy layer for website/landing engagements, loaded at Phase 1 to 2 and again at the gate. One job per page, categorical clarity in 30 seconds, the first scroll answers four questions, copy before design, premium is removal, speed and findability as the floor, a website is a system not a project; plus the five-question site audit that doubles as the redesign intake. The core bar judges craft; these judge whether the site converts and survives.
+- **Visual craft layer** (`references/quality/visual_craft.md`): how craft decisions get made: the Anchor Font strategy (headline-anchored, Fonts-in-Use-verified pairings), the Star of the Show (one brand-derived seed per page), visual rhyming (shapes/colors/textures with a traceable ancestor), disciplined depth (noise, layering, never louder than content), the Material opacity ladder (100/87/70/60), and iterative divergence (radical variants before convergence, 3-variant floor at Phase 6). Loaded at Phases 5 and 8; the audit-redo loop cites it alongside the core bar.
 - **Slop fingerprint sweep** (`references/quality/slop_fingerprint.md`): the named AI tells (eyebrow text, italic serif flourish, numbered section labels, typed-out logo strips, near-miss brand colors, text-for-logo) plus the pre-client quality pass. Mandatory instrument in the audit-redo loop for web and deck artifacts; every hit is a finding, not a taste question.
 - **Scoresheets** (`scoresheet.md`): numeric, threshold-gated, principles cited by name. Scores are logged to `.calliope/scores.log` (they feed the Taste-Eval Benchmark).
 - **Technique atlas** (`technique_atlas.md`): GSAP, Three.js/WebGL, parallax, scroll choreography, see-thru scrub, mouse tracking, 3D scroll; Chrome DevTools perf ritual is the final gate on anything animated.

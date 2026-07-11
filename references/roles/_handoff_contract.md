@@ -12,6 +12,10 @@ Every delegation from Account Manager to any role agent carries this block, fill
 **Boundaries:** <what is out of scope for this dispatch; which decisions must come back as questions instead of being made>
 **Gate:** <which gate this output faces next (CD final gate / QA audit-redo / prose gate) so the agent builds to it>
 **Budget note:** <if this dispatch involves paid APIs or heavy compute: the estimate the client approved>
+**Work identity:** <stable work id, parent id, provider/model/session when known>
+**Ownership:** <exact files or design surfaces this role may write; overlapping live ownership blocks dispatch>
+**Risk and authority:** <lite/standard/high-stakes + read-only/scoped-write/isolated-full-write>
+**Independent reviewer:** <role/model that did not produce the artifact; high-stakes work prefers a different model family>
 ```
 
 ## Return rules
@@ -25,3 +29,4 @@ Every delegation from Account Manager to any role agent carries this block, fill
 - Fresh-context subagent per heavy task. Never accumulate work product in the orchestrating context.
 - Parallel dispatches only when tasks are independent (two page builds: yes; build + its own QA: no).
 - Every dispatch and return is logged in `.calliope/STATE.md` under `## Dispatch log` (role, objective, files returned, date).
+- A fresh reviewer gets the artifact, brief and scoresheet, not the maker's persuasive reasoning. Cross-model agreement never replaces the visual proof or scoresheet gate.
