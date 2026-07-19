@@ -123,6 +123,46 @@ tempo and key, don't just remix). Refinement of a mediocre idea is still mediocr
 - **Gate check:** if the delivered direction is the first and only version that was ever
   rendered, the divergence step was skipped, a process finding, regardless of how good it looks.
 
+## Craft 7. Generated-asset QC (the machine's output is a draft, not a deliverable)
+
+Applies to every asset that came out of a model rather than a hand: kie.ai and Higgsfield
+stills, video frames, thumbnails, diagrams, icons, textures, mockup fills. The failure mode is
+specific and repeatable, so the check is a fixed pass, not a judgement call. Adapted from Nick
+Saraev's production eval (supplied 2026-07-19), which runs the same gate before an asset is
+allowed to reach the human reviewer.
+
+The point is ordering. Generated assets must clear this pass **before** they enter the audit-redo
+loop, not during it. An asset with melted glyphs wastes a full review cycle on a defect that a
+regeneration fixes for free, and the reviewer's attention is the scarce resource.
+
+**The six checks.** Every generated asset, every time. Any single fail sends it back to
+regeneration, not to the reviewer.
+
+1. **Text renders clean.** No garbled, melted, or invented characters. Models still fail at
+   glyphs. Zoom to 100% and read every word in the image; do not judge text from a thumbnail.
+2. **On-style.** Matches the locked direction from the treatment, not a generic house style the
+   model drifted toward. Name the direction and point at what in the asset honors it.
+3. **Legible at final size.** Judge at the size it ships at. A composition that only reads at
+   full-screen fails when it lands in a card, a favicon, or a thumbnail.
+4. **Faithful to the brief.** The asset answers the prompt's intent, not merely its keywords. A
+   technically-correct image of the wrong idea is a fail.
+5. **Correct dimensions and aspect.** Generated at the target ratio, not cropped into it after
+   the fact. Crop-to-fit destroys composition the model actually got right.
+6. **No slop tells.** Run the asset against `slop_fingerprint.md`. Stock-photo lighting,
+   symmetrical AI faces, and the default gradient palette are regeneration triggers.
+
+- **Doctrine tension (stated, not smoothed):** Craft 6 says diverge widely and generate many
+  variations. This pass says reject fast. They are not in conflict: diverge at generation, gate
+  hard at selection. Volume upstream, ruthlessness downstream. The failure is gating early
+  (which collapses divergence) or gating late (which burns reviewer cycles).
+- **Cross-reference:** the deployed-surface analogue is the paint check, not the existence
+  check. Proving an asset is in the DOM or on disk is not proving it renders. Verify the pixels.
+- **Phase wiring:** runs at Phase 8 (build) the moment an asset returns from generation, and
+  again at any regeneration. Never batched to the end of the phase.
+- **Gate check:** can the producer state the six results per asset, with the failing ones named
+  and their regeneration recorded? An asset presented to the reviewer with no QC line did not
+  pass the pass; it skipped it.
+
 ## Closing frame
 
 The shift is from aesthetic choices to strategic ones, "brand engineering," not web design:
@@ -142,3 +182,16 @@ verbatim because it is the ethos of the audit-redo loop: **if you don't quit, yo
 | 6. Tip 5: Opacity hierarchy (100/87/70/60, Material Design) | Craft 5 |
 | 7. Tip 6: Iterative Divergence (Michelangelo, mode swapping, 12+ variations, radical shifts) | Craft 6 |
 | 8. Conclusion (tips → mastery, "if you don't quit, you win") | Closing frame |
+
+Second source: Nick Saraev, "Steal My Actual AI Agent Workflow" (supplied 2026-07-19), visual-asset
+eval segment at 13:39-14:25.
+
+| Source element | Absorbed at |
+|---|---|
+| Visual-asset eval gates renders before they reach the human | Craft 7 header + ordering note |
+| Text must render clean, no garbled or melted characters | Craft 7 check 1 |
+| Is this in the style (his: ink editorial, black on white) | Craft 7 check 2 |
+| Legible at thumbnail size | Craft 7 check 3 |
+| Faithful to the brief | Craft 7 check 4 |
+| Correct shape / dimensions (1280x720 thumbs, 1920x1080 diagrams) | Craft 7 check 5 |
+| Applies to demos, thumbnails, diagrams, generated imagery | Craft 7 scope line |
