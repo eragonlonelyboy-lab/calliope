@@ -34,7 +34,7 @@ The default web station list in `references/quality/audit_redo_loop.md` applies 
 
 ## Technique atlas
 
-Web techniques live in the shared atlas: `references/quality/technique_atlas.md` (GSAP core/timeline/ScrollTrigger, Three.js/WebGL, parallax, scroll choreography, see-thru scrub, mouse tracking, 3D scroll, DevTools perf ritual). The treatment's technique palette names atlas entries; the builder loads the implementing skills per Gate wiring below.
+Web techniques live in the shared atlas: `references/quality/technique_atlas.md` (GSAP core/timeline/ScrollTrigger, Three.js/WebGL, parallax, scroll choreography, see-thru scrub, mouse tracking, 3D scroll, pre-rendered cinematic scrub, DevTools perf ritual). The treatment's technique palette names atlas entries; the builder loads the implementing skills per Gate wiring below.
 
 ## Treatment flavor
 
@@ -46,7 +46,7 @@ Phase 4 adds: competitor site performance snapshot (their Lighthouse/weight: bei
 
 ## Gate wiring
 
-- **Build:** `taste-skill` (anti-slop layout/type/spacing; dials from motion appetite) → `gsap-*` official skills for animation implementation → `threejs-webgl`/`react-three-fiber` when the palette calls 3D → `motion-dev-animations` for React-Motion work.
+- **Build:** `taste-skill` (anti-slop layout/type/spacing; dials from motion appetite) → `gsap-*` official skills for animation implementation → `threejs-webgl`/`react-three-fiber` when the palette calls 3D → `scroll-world` when the palette calls the pre-rendered cinematic scrub (Higgsfield; the CALLIOPE brief feeds its intake, skip its own interview; decider approves scene stills before any video credit is spent) → `motion-dev-animations` for React-Motion work.
 - **Audit:** `impeccable` (`npx impeccable detect` + audit command) → design-motion-principles audit mode for every animation (frequency gate) → `ui-ux-pro-max` rubric-mode ONLY when a design system is locked (never `--design-system`).
 - **Polish:** `impeccable` one-word commands (quieter/bolder/polish) driven by CD verdict language.
 - Missing skill → the station's check still runs manually per this pack's floors; note the degradation in the QA report.

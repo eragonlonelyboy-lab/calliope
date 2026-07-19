@@ -51,6 +51,13 @@ This atlas names the techniques a treatment may put in its palette. Each entry s
 **Implementing skill:** threejs-webgl (GSAP camera integration pattern) + gsap-scrolltrigger; react-three-fiber (ScrollControls) for React.
 **Perf notes:** ease: "none" on scrubbed camera tweens. Update camera in the render loop, not via layout-touching DOM. On-demand rendering when the scene is idle. DRACO-compress models, keep hero scenes under a few MB of geometry and texture.
 
+## Pre-rendered cinematic scrub (scroll-world)
+**What:** Scroll scrubbing pre-rendered AI video instead of a live scene: Higgsfield scene stills (gpt_image_2) + camera-flight clips (Seedance/Kling) chained with frame-identical seams, played as one continuous no-cut flight by a portable blob-seek scrub engine. The camera genuinely moves; scroll only drives time (the Apple product-page technique). No WebGL at runtime.
+**Earns its place when:** The treatment calls for photoreal or richly art-directed camera travel at a fidelity live WebGL cannot hit (the "PS2-look" failure mode), or the concept is a journey through spaces: walkthroughs, process stories, diorama worlds. Visual quality comes from the image/video model, not from runtime rendering.
+**Slop mode:** Seam pops (connector endpoints taken from stills instead of the neighbouring clips' actual rendered frames), camera velocity reversing across a seam (rewind stutter), or the skill's isometric-diorama default applied unexamined to a brief whose tone asked for something else.
+**Implementing skill:** scroll-world (`~/.claude/skills/scroll-world/`). Prereqs: Higgsfield CLI authenticated with credits + ffmpeg. Real spend: ~N image + (2N-1) video gens per build, 3-8 min each, plus NSFW-filter re-rolls on interiors.
+**Perf notes:** Encode native res, crf ~20, small GOP (-g 8), blob URLs for seekability (byte-range-less hosts freeze seeks at frame 0). Mobile is beta (720p -g 4 siblings); the mechanic is desktop-native. In a CALLIOPE engagement the brief feeds the skill's Step 1 intake (skip its own interview), and the decider approves the scene stills (its Step 2) before any video credit is spent: static-frame-first.
+
 ## Three.js/WebGL scenes (hero + ambient)
 **What:** Real-time 3D: hero scenes (a product model, a signature object) and ambient scenes (particles, gradient meshes, shader backgrounds) rendered via WebGL/WebGPU.
 **Earns its place when:** The 3D content expresses something flat imagery cannot: material, dimension, configurability. Ambient scenes earn it only when they sit behind content at low visual volume and degrade gracefully.
